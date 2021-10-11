@@ -1573,8 +1573,7 @@ p {
   font-size: 18px; }
   @media (max-width: 767px) {
     .lg-btn {
-      font-size: 16px;
-      ine-height: 52px; } }
+      font-size: 16px;} }
 
 .el-btn {
   line-height: 80px !important;
@@ -3243,5 +3242,12 @@ p.form-message.success, p.form-message.error {
   .back-to-top:hover {
     color: #fff;
     background-color: #0067f4; }
+  .logozarezerwuj{
+    filter:grayscale(0);
+  }
+  .logozarezerwuj:hover{
+    transition: 1s;
+    filter:grayscale(1);
+  }
 
 /*# sourceMappingURL=style.css.map */

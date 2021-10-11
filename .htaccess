@@ -1,0 +1,6 @@
+RewriteEngine On 
+RewriteRUle ^example/?$ /example2/mask
+RewriteCond %{HTTP_HOST} ^yourdomain.com
+RewriteRule ^(.*) http://www.yourotherdomain.com/directory [P]
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
